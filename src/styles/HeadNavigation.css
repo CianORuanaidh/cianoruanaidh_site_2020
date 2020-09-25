@@ -1,0 +1,94 @@
+ul {
+    display: flex;
+    list-style: none;
+    text-transform: capitalize;
+}
+
+li {
+    margin-right: 13px;
+}
+
+li:last-of-type {
+    margin-right: 0;
+}
+
+a {
+    padding: 5px 7px;
+    text-decoration: none;
+    color: white;
+}
+
+a.hamburger-link{
+    display: block;
+    position: relative;
+}
+
+.toggler {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+  }
+
+/* Hamburger Line */
+.hamburger {
+    width: 30px;
+    padding-top: 8px;
+}
+
+.hamburger > div {
+    position: relative;
+    flex: none;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+  
+/* Hamburger Lines - Top & Bottom */
+.hamburger > div::before,
+.hamburger > div::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 60%;
+    height: 2px;
+    right: 0;
+    background: inherit;
+    transition: all 0.4s ease;
+}
+
+/* Moves Line Down */
+.hamburger > div::after {
+    top: 10px;
+    width: 80%;
+}
+
+/* Turns Lines Into X */
+.toggler:checked + .hamburger > div:before,
+.toggler:checked + .hamburger > div:after {
+    top: 0;
+    transform: rotate(90deg);
+    width: 100%;
+}
+
+.toggler:checked + .hamburger > div {
+    transform: rotate(135deg);
+}
+
+.toggler:hover + .hamburger > div:before,
+.toggler:hover + .hamburger > div:after  {
+    width: 100%;
+}
+
+.toggler:checked:hover + .hamburger > div {
+    transform: rotate(225deg);
+}

@@ -1,0 +1,75 @@
+.animated-bar {
+  background-color: #e5166D;
+  height: 5px;
+
+  width: 100px;
+  margin: 0 auto;
+
+  animation: swing 2s infinite;
+}
+
+@keyframes swing {
+  0% {
+    transform: translate(-100px, 0px);
+    width: 20px;
+  }
+  5% {
+    transform: translate(-100px, 0px);
+    width: 20px;
+  }
+
+  25% {
+    width: 100px;
+  }
+
+  45% {
+    transform: translate(100px, 0px);
+    width: 20px;
+  }  
+  50% {
+    transform: translate(100px, 0px);
+    width: 20px;
+  }
+  55% {
+    transform: translate(100px, 0px);
+    width: 20px;
+  }
+
+  75% {
+    width: 100px;
+  }
+  
+  95% {
+    transform: translate(-100px, 0px);
+    width: 20px;
+  }
+  100% {
+    transform: translate(-100px, 0px);
+    width: 20px;
+  }
+
+}
+
+.section-header span {
+  opacity: 0.75;
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.section-header h2 {
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 20px;
+}
+
+.align-left span {
+  display: inline;
+}
+
+.align-left h2 {
+  text-align: left;
+}
+.align-left .animated-bar {
+  margin: 0;
+}

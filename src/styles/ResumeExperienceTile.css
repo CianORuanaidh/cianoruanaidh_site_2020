@@ -1,0 +1,32 @@
+.experience-tile {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    border-left: 2px solid #e5166D;
+    background-color: rgba(225, 225, 225, 0.025);
+    padding: 1rem 2rem;
+    /* opacity: 0.75; */
+    position: relative;
+}
+
+.experience-tile .title {
+    margin: 1rem 0;
+}
+
+.experience-tile .title::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #e5166D;
+    position: absolute;
+    left: 0;
+}
+
+.experience-tile .title::after {
+    content: '';
+    width: 14px;
+    height: 14px;
+    background-color: #e5166D;
+    position: absolute;
+    left: 14px;
+    transform: rotate(45deg);
+    margin-top: 3px;
+}

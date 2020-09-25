@@ -1,0 +1,33 @@
+.about-me {
+    padding: 0 50px;
+}
+
+.content {
+    margin-top: 5rem;
+}
+
+.bio {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    opacity: 0.75;
+    line-height: 1.75rem;
+    padding-bottom: 2.5rem;
+    /* margin-bottom: 2.5rem; */
+}
+
+.download-resume {
+    background-color: #e5166D;
+    border: 0;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 25px;
+    text-transform: capitalize;
+
+    margin-right: 50%;
+    margin-top: 1rem;
+}
+
+.about-me-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

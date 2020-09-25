@@ -1,0 +1,84 @@
+.hero-banner {
+    /* border: 1px solid red; */
+    color: white;
+}
+
+.hero-banner h1 {
+    /* color: turquoise; */
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.hero span.phonetic {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.hero span.phonetic em {
+  text-shadow: 0px 0px 9px #f9f9f9;
+}
+
+.hero-banner .h2-holder {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-banner h2 {
+    padding-left: 10px;
+    position: relative;
+    width: max-content;
+    max-width: 500px;
+    padding-right: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-transform: capitalize;
+    font-weight: 400;
+    text-align: center;
+}
+
+.hero-banner h2.toggle-true {
+    animation: collapse-expand 3s;
+    animation-timing-function: ease;
+}
+
+@keyframes collapse-expand {
+    0% {
+        max-width: 500px;
+        padding-right: 10px;
+      }
+    10% {
+      max-width: 500px;
+      padding-right: 10px;
+    }
+    40% {
+        padding-right: 10px;
+    }
+    50% {
+        max-width: 0;
+        padding-right: 0;
+      }
+    60% {
+        padding-right: 10px;
+    }
+    90% {
+      max-width: 500px;
+      padding-right: 10px;
+    }
+    100% {
+        max-width: 500px;
+        padding-right: 10px;
+    }
+  }
+
+
+.hero-banner h2::after {
+    content: '';
+    width: 0;
+    height: 100%;
+    position: absolute;
+    border: 1px solid white;
+    top: 0;
+    right: 0;
+}

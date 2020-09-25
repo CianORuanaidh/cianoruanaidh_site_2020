@@ -1,0 +1,51 @@
+.my-resume {
+    padding: 0.5px 50px;
+}
+
+.my-resume h3 {
+    font-weight: 400;
+}
+
+.exp-edu-holder {
+    display: flex;
+}
+
+.tile-col {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50%;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 3rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 3rem;
+    justify-content: center;
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+.skill-icon {
+    /* padding: 1rem;
+    color: #e5166D; */
+
+
+    height: 5rem;
+    color: #e5166D;
+    background-color: #222;
+    border-radius: 50%;
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.icon-label {
+    visibility: hidden;
+    position: absolute;
+    top: 1000px;
+}

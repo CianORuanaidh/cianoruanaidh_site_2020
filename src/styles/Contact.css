@@ -1,0 +1,40 @@
+.contact {
+    padding: 0 50px;
+}
+
+.content {
+    margin-top: 5rem;
+}
+
+.contact-list {
+    padding: 0;
+    display: block;
+    text-transform: none;
+}
+
+.contact-list-element {
+    display: flex;
+}
+
+.contact-list-element-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-list-element-content p {
+    margin: 0;
+}
+
+.contact-list-element-content label {
+    font-weight: 700;
+}
+
+.contact-icon {
+    display: inline-block;
+    border-right: 1px rgb(240,266,255,.3) solid;
+    padding: 1rem 0;
+    width: 2rem;
+    margin-right: 1rem;
+    color: #e5166D;
+}

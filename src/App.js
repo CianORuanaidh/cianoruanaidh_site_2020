@@ -1,24 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
+import HeadNavigation from './components/HeadNavigation.js';
+import HeroSection from './components/HeroSection.js';
+import AboutMe from './components/AboutMe.js';
+import MyResume from './components/MyResume.js';
+import Contact from './components/Contact.js';
+
+// import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Link, Route, NavLink } from 'react-router-dom';
+
 import './App.css';
+
+const ContactTwo = (props) => {
+  return(
+    <h2>Contact</h2>
+  )
+}
+const AboutTwo = () =>{
+  return(
+    <h2> About me </h2>
+  )
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+        <HeadNavigation></HeadNavigation>
+
+        <Route path="/" exact component={HeroSection}></Route>          
+        <Route path="/about" component={AboutMe}></Route>
+        <Route path="/resume" component={MyResume}></Route>
+        <Route path="/contact" component={Contact}></Route>
+      </Router>
     </div>
   );
 }
