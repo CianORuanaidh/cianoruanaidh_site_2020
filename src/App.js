@@ -5,6 +5,9 @@ import AboutMe from './components/AboutMe.js';
 import MyResume from './components/MyResume.js';
 import Contact from './components/Contact.js';
 
+import vid from './assets/video_1.mp4';
+import vidTwo from './assets/video_2.mp4';
+
 // import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { BrowserRouter as Router, Link, Route, NavLink } from 'react-router-dom';
 
@@ -24,6 +27,10 @@ const AboutTwo = () =>{
 function App() {
   return (
     <div>
+      <video autoPlay muted loop id="myVideo">
+        <source src={vid} type="video/mp4" />
+      </video>
+
       <Router>
         <HeadNavigation></HeadNavigation>
 
