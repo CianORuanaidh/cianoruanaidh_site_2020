@@ -1,22 +1,22 @@
 import React from 'react';
 import '../styles/HeadNavigation.css';
-import { BrowserRouter as Router, Link, NavLink } from 'react-router-dom';
+// import { BrowserRouter as Link } from 'react-router-dom';
+// import { BrowserRouter as Router, Link } from 'react-router-dom';
+
+import { Link } from 'react-router-dom';
+
 
 
 const HeadNavigation = () => (
     <header>
         <nav>    
             <ul>
-                <li>
-                    <a className="hamburger-link" href="#">
+                {/* <li>
+                    <button className="hamburger-link">
                         <input type="checkbox" className="toggler" />
                         <div className="hamburger"><div></div></div>
-                    </a>
-                </li>
-                {/* <li><a href="#">about</a></li> */}
-                {/* <li><a href="#">resume</a></li> */}
-                {/* <li><a href="#">portfolio</a></li> */}
-                {/* <li><a href="#">contact</a></li> */}
+                    </button>
+                </li> */}
                 <li><Link to="/about">about</Link></li>
                 <li><Link to="/resume">resume</Link></li>
                 <li><Link to="/portfolio">portfolio</Link></li>

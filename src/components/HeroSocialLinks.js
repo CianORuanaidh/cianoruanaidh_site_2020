@@ -6,16 +6,16 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { faHandPeace } from '@fortawesome/free-solid-svg-icons'
 
-import { faGithubSquare } from '@fortawesome/free-brands-svg-icons'
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+// import { faGithubSquare } from '@fortawesome/free-brands-svg-icons'
+// import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const HeroSocialLinks = () => (
     <nav>    
         <ul className="social-links">
                 
-            <li><a ><FontAwesomeIcon icon={faGithub} /></a></li>
-            <li><a ><FontAwesomeIcon icon={faLinkedinIn} /></a></li>
-            <li><a ><FontAwesomeIcon icon={faHandPeace} /></a></li>
+            <li><a href="githib.com"><FontAwesomeIcon icon={faGithub} /></a></li>
+            <li><a href="githib.com"><FontAwesomeIcon icon={faLinkedinIn} /></a></li>
+            <li><a href="githib.com"><FontAwesomeIcon icon={faHandPeace} /></a></li>
 
             {/* <li><a ><FontAwesomeIcon icon={faGithubSquare} /></a></li>
             <li><a ><FontAwesomeIcon icon={faLinkedin} /></a></li>

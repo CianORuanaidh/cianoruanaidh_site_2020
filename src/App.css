@@ -17,7 +17,7 @@ body {
 }
 
 .hero {
-  height: calc(100vh - 2px);
+  height: calc(100vh - 62px);
   padding: 0.5px 50px;
   position: relative;
 
@@ -48,4 +48,8 @@ h3 {
   min-width: 100%;
   min-height: 100%;
   opacity: 0.1;
+}
+
+main.main-body {
+  padding-top: 60px;
 }
