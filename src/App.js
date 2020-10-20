@@ -46,10 +46,10 @@ class App extends React.Component {
   }
 
   handleScroll = (event) => {
-    console.log('SCROLL')
-    console.log('innerHeight: ', window.innerHeight)
-    console.log('scrollY: ', window.scrollY)
-    console.log('ROOT HEIGHT: ', this.state.height)
+    // console.log('SCROLL')
+    // console.log('innerHeight: ', window.innerHeight)
+    // console.log('scrollY: ', window.scrollY)
+    // console.log('ROOT HEIGHT: ', this.state.height)
     // console.log(window.outerHeight)
     // console.log(event)
     // var heightBound = window.height * 0.8

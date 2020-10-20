@@ -21,6 +21,7 @@ class HeroSection extends React.Component {
     }
 
     componentDidMount() {
+        console.log('componentDidMount')
         this.timerID = setInterval(
             () => this.tick(),
             1500
@@ -28,6 +29,7 @@ class HeroSection extends React.Component {
     }
     
     componentWillUnmount() {
+        console.log('componentDidMount')
         clearInterval(this.timerID);
     }
     

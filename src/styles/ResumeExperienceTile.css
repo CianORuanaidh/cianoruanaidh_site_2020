@@ -2,22 +2,27 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.25);
     border-left: 2px solid #e5166D;
     background-color: rgba(225, 225, 225, 0.025);
-    padding: 1rem 2rem;
+    /* padding: 0.5rem 1rem 0.5rem 2rem; */
     /* opacity: 0.75; */
+    padding: 1rem 1rem 1rem 2rem;
     position: relative;
 }
 
-.experience-tile .title {
-    margin: 1rem 0;
+.experience-tile h4 ,
+.experience-tile p {
+    margin: 0.5rem 0;
 }
 
 .experience-tile .title::before {
     content: '';
-    width: 20px;
+    width: 9px;
     height: 20px;
     background-color: #e5166D;
     position: absolute;
     left: 0;
+
+    transition: width 0.1s ease-out;
+
 }
 
 .experience-tile .title::after {
@@ -26,7 +31,65 @@
     height: 14px;
     background-color: #e5166D;
     position: absolute;
+    left: 2px;
+    transform: rotate(45deg);
+    margin-top: 3px;
+
+    transition: left 0.1s ease-out;
+
+}
+
+.experience-tile.show-more .title::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #e5166D;
+    position: absolute;
+    left: 0;
+
+    transition: width 0.1s ease-out;
+
+}
+
+.experience-tile.show-more .title::after {
+    content: '';
+    width: 14px;
+    height: 14px;
+    background-color: #e5166D;
+    position: absolute;
     left: 14px;
     transform: rotate(45deg);
     margin-top: 3px;
+
+    transition: left 0.1s ease-out;
+
+}
+
+.experience-tile.show-more {
+ background-color: rgba(225, 225, 225, 0.05);
+}
+
+.experience-tile .description {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 1s ease-out;
+    margin: 0;
+}
+
+.experience-tile.show-more .description {
+    height: auto;
+    max-height: 600px;
+    transition: max-height 3s ease-out;
+}
+
+button:focus + p + p.description {
+    height: 100px;
+    max-height: 600px;
+}
+
+.toggle-on-icon {
+    color: #e5166D;
+    font-size: 0.5rem;
+    margin-left: 10px;
+    vertical-align: middle;
 }
