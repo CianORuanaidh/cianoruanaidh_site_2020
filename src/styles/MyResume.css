@@ -44,6 +44,11 @@
     margin: 1rem;
 }
 
+.skill-list .skill-icon:nth-of-type(2n) {
+    color: #4ECDC4;
+}
+
+
 .icon-label {
     visibility: hidden;
     position: absolute;

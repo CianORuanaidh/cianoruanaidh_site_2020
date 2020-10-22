@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/HeroSection.css';
 import HeroSocialLinks from './HeroSocialLinks';
+import HeadNavigation from './HeadNavigation';
 
 const subheadings = [
     'Web developer',
@@ -42,6 +43,8 @@ class HeroSection extends React.Component {
     render() {
         return (
             <div className="hero">
+                <HeadNavigation></HeadNavigation>
+
                 <div className="hero-banner">
                     <h1>Cian O'Ruanidh</h1>
                     <span className="phonetic">sounds like<em>'Key-in Oh-Rooney'</em></span>

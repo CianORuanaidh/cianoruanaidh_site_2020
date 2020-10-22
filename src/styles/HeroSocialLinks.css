@@ -21,3 +21,19 @@
 .social-links {
   padding: 0;
 }
+
+.social-links a {
+  display: block;
+  padding: 5px 10px;
+}
+
+.social-links a:hover,
+.social-links a:focus {
+  color: #4ECDC4;
+  transform: rotate(15deg);
+
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s; 
+
+}

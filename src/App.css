@@ -16,8 +16,21 @@ body {
   font-family: 'Poppins', sans-serif;  
 }
 
+/* body::after {
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  -moz-border-radius: 7.5px;
+  -webkit-border-radius: 7.5px;
+  border-radius: 7.5px;
+  background-color: #69b6d5;
+} */
+
 .hero {
-  height: calc(100vh - 62px);
+  /* height: calc(100vh - 62px); */
+  height: 100vh;
+
   padding: 0.5px 50px;
   position: relative;
 
@@ -51,7 +64,7 @@ h3 {
 }
 
 main.main-body {
-  padding-top: 60px;
+  /* padding-top: 60px; */
 }
 
 button {

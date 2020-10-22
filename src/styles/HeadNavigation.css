@@ -1,6 +1,6 @@
 header {
-    position: absolute;
-    width: 100%;
+    /* position: absolute;
+    width: 100%; */
 
     /* border-bottom: 1px solid #e5166D; */
 }
@@ -107,4 +107,35 @@ button.hamburger-link {
 
 .toggler:checked:hover + .hamburger > div {
     transform: rotate(225deg);
+}
+
+a {
+    position: relative;
+}
+
+header a::after {
+    content: '';
+    width: 0%;
+    /* border-bottom: solid 2px #e5166D; */
+    border-bottom: solid 2px white;
+    position: absolute;
+    left: 0%;
+    top: 110%;
+    z-index: 1;
+    -webkit-transition: width .4s;
+    -o-transition: width .4s;
+    transition: width .4s; }
+  
+header a:hover::after,
+header a:focus::after {
+    width: 100%; 
+}
+
+header a:hover,
+header a:focus {
+    color: #4ECDC4;
+
+    -webkit-transition: color .4s;
+    -o-transition: color .4s;
+    transition: color .4s; 
 }

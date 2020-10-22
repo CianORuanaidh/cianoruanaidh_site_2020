@@ -5,6 +5,7 @@ import AboutMe from './components/AboutMe.js';
 import MyResume from './components/MyResume.js';
 import Contact from './components/Contact.js';
 import Portfilio from './components/Portfilio.js';
+import { Link } from 'react-router-dom';
 
 // import vid from './assets/video_1.mp4';
 // import vidTwo from './assets/video_2.mp4';
@@ -21,7 +22,7 @@ function AppTwo() {
       </video> */}
 
       <Router>
-        <HeadNavigation></HeadNavigation>
+        {/* <HeadNavigation></HeadNavigation> */}
         <main className="main-body" onScroll={this.handleScroll}>
           <Route path="/" exact component={HeroSection}></Route>          
           <Route path="/about" component={AboutMe}></Route>
@@ -69,7 +70,7 @@ class App extends React.Component {
       return (
         <div>
           <Router>
-            <HeadNavigation></HeadNavigation>
+            {/* <HeadNavigation></HeadNavigation> */}
             <main id="main-main"className="main-body" onScroll={this.handleScroll} onWheel={this.handleScroll}>
               <Route path="/" exact component={HeroSection}></Route>          
               <Route path="/about" component={AboutMe}></Route>
@@ -77,6 +78,7 @@ class App extends React.Component {
               <Route path="/contact" component={Contact}></Route>
               <Route path="/portfolio" component={Portfilio}></Route>
             </main>
+            <Link to="/">***</Link>
           </Router>
         </div>
       );
