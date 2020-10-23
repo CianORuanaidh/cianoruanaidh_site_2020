@@ -1,0 +1,48 @@
+.back-to-home-link {
+    height: 50px;
+    width: 50px;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+.back-to-home-link::before {
+    content: '';
+    width: 30px;
+    border-bottom: solid 3px white;
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    z-index: 1;
+    transform: rotate(45deg);
+    right: 25%;
+    transition: all .4s;
+}
+
+.back-to-home-link::after {
+    content: '';
+    width: 30px;
+    border-bottom: solid 3px white;
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    z-index: 1;
+    transform: rotate(135deg);
+    right: 25%;
+    transition: all .4s;
+}
+
+.back-to-home-link:hover::before,
+.back-to-home-link:hover::after {
+    width: 35px;
+} 
+
+.back-to-home-link:hover::before {
+    transform: rotate(135deg);
+}
+.back-to-home-link:hover::after {
+    transform: rotate(225deg);
+}
+  

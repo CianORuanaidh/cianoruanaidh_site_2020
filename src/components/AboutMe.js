@@ -7,7 +7,8 @@ import '../styles/AboutMe.css';
 
 const AboutMe = () => (
     <section className="about-me">    
-        <SectionHeader text="about me"></SectionHeader>
+        {/* <BackToHomeLink></BackToHomeLink> */}
+        <SectionHeader text="about me" subext="some text"></SectionHeader>
         <div className="content">
             <h3>I'm Cian, a Front-End Developer based in Toronto.</h3>
             <span className="phonetic">sounds like<em>'Key-in Oh-Rooney'</em></span>

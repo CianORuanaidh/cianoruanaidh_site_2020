@@ -1,6 +1,7 @@
 import React from 'react';
 
 import SectionHeader from '../components/_elements/SectionHeader';
+import BackToHomeLink from './BackToHomeLink.js';
 
 import '../styles/Portfolio.css';
 
@@ -50,7 +51,8 @@ class Portfilio extends React.Component {
       render() {
           return (
             <section className="portfolio">
-                <SectionHeader text="portfolio"></SectionHeader>
+                {/* <BackToHomeLink></BackToHomeLink> */}
+                <SectionHeader text="portfolio" subext="some text"></SectionHeader>
                 <h3 className="portfilio-sub-head">below are some project from my JunoCollege days</h3>
                 <div className="portfilio-list">
                     {portfolio.map(item => {

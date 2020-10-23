@@ -3,6 +3,8 @@ import React from 'react';
 import SectionHeader from '../components/_elements/SectionHeader';
 import ResumeExperienceTile from '../components/_elements/ResumeExperienceTile';
 import ResumeEducationTile from '../components/_elements/ResumeEducationTile';
+import BackToHomeLink from './BackToHomeLink.js';
+
 
 import '../styles/MyResume.css';
 // import { render } from '@testing-library/react';
@@ -63,7 +65,8 @@ class MyResume extends React.Component {
       render() {
           return (
             <section className="my-resume">
-                <SectionHeader text="resume"></SectionHeader>
+                {/* <BackToHomeLink></BackToHomeLink> */}
+                <SectionHeader text="resume" subext="some text"></SectionHeader>
       
                 <h3>Experience</h3>                
                 {arrray.map((item) => (<ResumeExperienceTile></ResumeExperienceTile>))}

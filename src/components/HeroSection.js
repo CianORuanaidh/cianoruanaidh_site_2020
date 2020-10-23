@@ -22,7 +22,6 @@ class HeroSection extends React.Component {
     }
 
     componentDidMount() {
-        console.log('componentDidMount')
         this.timerID = setInterval(
             () => this.tick(),
             1500
@@ -30,7 +29,6 @@ class HeroSection extends React.Component {
     }
     
     componentWillUnmount() {
-        console.log('componentDidMount')
         clearInterval(this.timerID);
     }
     
@@ -44,7 +42,6 @@ class HeroSection extends React.Component {
         return (
             <div className="hero">
                 <HeadNavigation></HeadNavigation>
-
                 <div className="hero-banner">
                     <h1>Cian O'Ruanidh</h1>
                     <span className="phonetic">sounds like<em>'Key-in Oh-Rooney'</em></span>
