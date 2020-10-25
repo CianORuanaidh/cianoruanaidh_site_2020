@@ -1,7 +1,8 @@
 import React from 'react';
-import '../styles/HeroSection.css';
 import HeroSocialLinks from './HeroSocialLinks';
 import HeadNavigation from './HeadNavigation';
+
+import '../styles/HeroSection.css';
 
 const subheadings = [
     'Web developer',
@@ -29,6 +30,7 @@ class HeroSection extends React.Component {
     }
     
     componentWillUnmount() {
+        console.log('UNMOUNT HERO')
         clearInterval(this.timerID);
     }
     

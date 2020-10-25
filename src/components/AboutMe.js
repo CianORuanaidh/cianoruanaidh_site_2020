@@ -1,13 +1,11 @@
 import React from 'react';
-
 import HeroSocialLinks from './HeroSocialLinks.js';
 import SectionHeader from '../components/_elements/SectionHeader';
-import '../styles/AboutMe.css';
 
+import '../styles/AboutMe.css';
 
 const AboutMe = () => (
     <section className="about-me">    
-        {/* <BackToHomeLink></BackToHomeLink> */}
         <SectionHeader text="about me" subext="some text"></SectionHeader>
         <div className="content">
             <h3>I'm Cian, a Front-End Developer based in Toronto.</h3>
@@ -22,7 +20,6 @@ const AboutMe = () => (
             <HeroSocialLinks></HeroSocialLinks>
         <button className="download-resume">Resume download</button>
         </div>
-
     </section>
 );
 export default AboutMe;

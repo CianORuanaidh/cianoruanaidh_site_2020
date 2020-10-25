@@ -1,18 +1,15 @@
 import React from 'react';
-
 import SectionHeader from '../components/_elements/SectionHeader';
-import BackToHomeLink from './BackToHomeLink.js';
-
-import '../styles/Portfolio.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faBolt } from '@fortawesome/free-solid-svg-icons';
 
-
 import singleWordImg from '../assets/assets-a-single-word-screen.png';
 import bikeShareImg from '../assets/assets-toronto-bike-share-app-screen.png';
 import clickBaitImg from '../assets/assets-click-bait-mock-up-screen.png';
+
+import '../styles/Portfolio.css';
 
 let portfolio = [
     {
@@ -51,7 +48,6 @@ class Portfilio extends React.Component {
       render() {
           return (
             <section className="portfolio">
-                {/* <BackToHomeLink></BackToHomeLink> */}
                 <SectionHeader text="portfolio" subext="some text"></SectionHeader>
                 <h3 className="portfilio-sub-head">below are some project from my JunoCollege days</h3>
                 <div className="portfilio-list">

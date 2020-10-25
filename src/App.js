@@ -6,6 +6,7 @@ import MyResume from './components/MyResume.js';
 import Contact from './components/Contact.js';
 import Portfilio from './components/Portfilio.js';
 import BackToHomeLink from './components/BackToHomeLink.js';
+import MiscellaneousFun from './components/MiscellaneousFun.js';
 // import { Link } from 'react-router-dom';
 
 // import {withRouter} from 'react-router-dom';
@@ -90,6 +91,8 @@ class App extends React.Component {
               <Route path="/resume" component={MyResume}></Route>
               <Route path="/contact" component={Contact}></Route>
               <Route path="/portfolio" component={Portfilio}></Route>
+              <Route path="/misc_fun" component={MiscellaneousFun}></Route>
+              
             </main>
           </Router>
         </div>

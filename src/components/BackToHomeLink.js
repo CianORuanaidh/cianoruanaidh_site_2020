@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/BackToHomeLink.css';
-
 import { useLocation } from 'react-router-dom';
+
+import '../styles/BackToHomeLink.css';
 
 function BackToHomeLink(){
     const location = useLocation();

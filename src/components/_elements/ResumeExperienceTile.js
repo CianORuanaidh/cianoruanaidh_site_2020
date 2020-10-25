@@ -1,19 +1,9 @@
 import React from 'react';
 
-import '../../styles/ResumeExperienceTile.css';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDotCircle } from '@fortawesome/free-solid-svg-icons';
 
-
-const ResumeExperienceTileOLD = (props) => (
-    <div className="experience-tile">
-        <h4 className="title"><button className="title">Software Developer</button></h4>
-        <p>June 2019 - 2020</p>
-        <p className="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ex sed ab sequi omnis laborum eius quae a labore architecto? Temporibus distinctio expedita sequi libero asperiores veritatis similique at corrupti.</p>
-    </div>    
-);
-
+import '../../styles/ResumeExperienceTile.css';
 
 class ResumeExperienceTile extends React.Component { 
     constructor(props) {
@@ -53,7 +43,6 @@ class ResumeExperienceTile extends React.Component {
         if (this.state.isToggleOn || this.state.isMouseOver) {
             classString += ' show-more'
         }
-        console.log(this.state)
         return classString;
     }
 

@@ -4,16 +4,15 @@ import SectionHeader from '../components/_elements/SectionHeader';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import BackToHomeLink from './BackToHomeLink.js';
-
-
-
 
 import '../styles/Contact.css';
 
+
+
+
+
 const Contact = () => (
     <section className="contact">    
-        {/* <BackToHomeLink></BackToHomeLink> */}
         <SectionHeader text="get in touch" subext="Let's collaborate"></SectionHeader>
         <div className="content">
             <h3>Contact</h3>

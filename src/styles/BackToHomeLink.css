@@ -4,7 +4,7 @@
     display: block;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 1rem;
 }
 
 
@@ -35,14 +35,20 @@
 }
 
 .back-to-home-link:hover::before,
-.back-to-home-link:hover::after {
+.back-to-home-link:hover::after,
+.back-to-home-link:focus::before,
+.back-to-home-link:focus::after {
+    /* columns: #4ECDC4; */
+    border-bottom: solid 3px #4ECDC4;
     width: 35px;
 } 
 
-.back-to-home-link:hover::before {
+.back-to-home-link:hover::before,
+.back-to-home-link:focus::before  {
     transform: rotate(135deg);
 }
-.back-to-home-link:hover::after {
+.back-to-home-link:hover::after,
+.back-to-home-link:focus::after {
     transform: rotate(225deg);
 }
   
