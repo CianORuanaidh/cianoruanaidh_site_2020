@@ -41,7 +41,7 @@ h4.portflio-item-title {
 .portflio-item {
     /* border: 1px dodgerblue solid; */
     /* max-width: 400px; */
-    padding: 1rem;
+    padding: 1rem 0;
     margin-top: 3rem;
     display: flex;
 }

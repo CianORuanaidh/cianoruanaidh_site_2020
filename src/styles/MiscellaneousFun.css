@@ -1,7 +1,7 @@
 .project-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .project-item h2 {
@@ -13,7 +13,10 @@ max-width: 800px;
 }
 
 .project-item {
-    max-width: 800px;
+    /* max-width: 800px;
+    padding: 1rem; */
+
+    max-width: 750px;
     padding: 1rem;
 }
 
@@ -49,11 +52,17 @@ p a:hover::after {
     width: 100%; 
 }
 
+.swiims {
+    border-bottom: 1px solid #55D893;
+}
 
 .swiims p a {
     color: #55D893;    
 }
 
+.waking-west {
+    border-bottom: 1px solid #86C0E0;
+}
 .waking-west p a {
     color: #86C0E0;    
 }

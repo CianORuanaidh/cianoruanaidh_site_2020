@@ -21,7 +21,7 @@ class MiscellaneousFun extends React.Component {
                         <p>SWiiMS have been around since late 2019. We signed with New Jersey label <strong>Mint400</strong> and released our debut EP <em><a href="#">Through Waves</a></em> in August 2020.</p>
                         
                         <iframe src="https://open.spotify.com/embed/album/47JEvHPJldsFaw37SqVCFt?si=AgWgxB4wT0Omic7Jwdcy2w" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                        <p>This is a video I created video for our song <em><a href="#">Hand Of Love</a></em> below.</p>
+                        <p>Below is a video I created video for our song <em><a href="#">Hand Of Love</a></em> below.</p>
                         <iframe width="800" height="420" src="https://www.youtube.com/embed/QBJ6PaQX0T8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <p>If you like this, check out these other videos I did for <em><a href="https://www.youtube.com/watch?v=S-Vg1oSsjps" target="_blank">Counting An Hour</a></em> and <em> <a href="https://www.youtube.com/watch?v=yEeJKZa1ouE" target="_blank">Let You Down</a>.</em> </p>
 

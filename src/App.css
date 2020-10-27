@@ -31,14 +31,23 @@ body {
   /* height: calc(100vh - 62px); */
   height: 100vh;
 
-  padding: 0.5px 50px;
-  position: relative;
+  /* padding: 0.5px 50px; */
+  /* position: relative; */
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   border-bottom: 1px solid #e5166D;
+}
+
+.hero::after {
+  content: '';
+  width: 100%;
+  border: 1px solid #e5166D;
+  bottom: -1px;
+  position: absolute;
+  left: 0;
 }
 
 header {
@@ -65,7 +74,23 @@ h3 {
 
 main.main-body {
   /* padding-top: 60px; */
+  /* border: 1px solid pink; */
+  max-width: 1600px;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
+
+/* main.main-body::after {
+  content: '';
+  width: 100%;
+  border: 1px solid #e5166D;
+  bottom: -1px;
+  position: absolute;
+  left: 0;
+} */
+
+
 
 button {
   background: none;

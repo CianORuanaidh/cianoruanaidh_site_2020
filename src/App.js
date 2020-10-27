@@ -84,15 +84,14 @@ class App extends React.Component {
           <Router>
             {/* <HeadNavigation></HeadNavigation> */}
             {/* <Link to="/">***</Link> */}
-            <BackToHomeLink></BackToHomeLink>
-            <main id="main-main"className="main-body" onScroll={this.handleScroll} onWheel={this.handleScroll}>
+            <main id="main-main" className="main-body" onScroll={this.handleScroll} onWheel={this.handleScroll}>
+              <BackToHomeLink></BackToHomeLink>
               <Route path="/" exact component={HeroSection}></Route>          
               <Route path="/about" component={AboutMe}></Route>
               <Route path="/resume" component={MyResume}></Route>
               <Route path="/contact" component={Contact}></Route>
               <Route path="/portfolio" component={Portfilio}></Route>
-              <Route path="/misc_fun" component={MiscellaneousFun}></Route>
-              
+              <Route path="/misc_fun" component={MiscellaneousFun}></Route>            
             </main>
           </Router>
         </div>
