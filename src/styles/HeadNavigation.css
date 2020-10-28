@@ -1,9 +1,3 @@
-header {
-    /* position: absolute;
-    width: 100%; */
-
-    /* border-bottom: 1px solid #e5166D; */
-}
 
 ul {
     display: flex;
@@ -116,7 +110,6 @@ a {
 header a::after {
     content: '';
     width: 0%;
-    /* border-bottom: solid 2px #e5166D; */
     border-bottom: solid 2px white;
     position: absolute;
     left: 0%;
@@ -134,10 +127,18 @@ header a:focus::after {
 
 header a:hover,
 header a:focus {
-    /* color: #4ECDC4; */
     color: #ff64a4;
 
     -webkit-transition: color .4s;
     -o-transition: color .4s;
     transition: color .4s; 
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+}
+
+@media only screen and (min-width: 600px) {
+    
 }
