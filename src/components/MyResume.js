@@ -68,7 +68,7 @@ class MyResume extends React.Component {
                 <h3>Eduction</h3>
                 {education.map(item => <ResumeEducationTile item={item}></ResumeEducationTile>)}
                 
-                <SectionHeader text="my skills" alignLeft="true" subext="some of my favourites"></SectionHeader>
+                <SectionHeader text="stack" subext="some technologies I'm fimilair with"></SectionHeader>
                 <div className="skill-list">
                     {skillArray.map(icon => <div className="skill-icon"><label className="icon-label" htmlFor={icon.icon}>{icon.label}</label><FontAwesomeIcon id={icon.icon} icon={icon.icon} title={icon.label}/></div>)}
                 </div>

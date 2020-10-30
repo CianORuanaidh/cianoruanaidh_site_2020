@@ -13,7 +13,161 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;  
+  height: 100vh;
+
+
+
+  /* background-image: 
+  linear-gradient(90deg, rgba(78, 205, 196, 0.8), rgba(18, 18, 22, 1) 15%, rgba(18, 18, 22, 1) 85%,  rgba(229, 22, 109, 0.8)); */
+
+
+  /* background: linear-gradient(115deg, rgba(78, 205, 196, 0.3), rgba(18, 18, 22, 1) 30%, rgba(18, 18, 22, 1) 70% ,rgba(229, 22, 109, 0.3)); */
+  background: linear-gradient(115deg, rgba(78, 205, 196, 0.05),rgba(229, 22, 109, 0.05));
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 15s ease infinite;
+  -moz-animation: AnimationName 15s ease infinite;
+  animation: AnimationName 15s ease infinite;
+
+
 }
+body::before,
+body::after {
+  /* background: linear-gradient(270deg, #42e3ba, #ed4aa9);
+  background: radial-gradient(rgba(78, 205, 196, 1), rgba(18, 18, 22, 1) 30% ,rgba(229, 22, 109, 1) 95%, rgba(18, 18, 22, 1) ); */
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 500px;
+  height: 500px;
+  max-width: 95%;
+  max-height: 95%;
+  background-color: rgba(3,3,3,1);
+  border-radius: 50%;
+  /* border: 1px solid rgba(222,222,222, 0.05); */
+  /* opacity: 0.05; */
+  opacity: 0.2;
+  /* background: radial-gradient(rgba(78, 205, 196, 1), rgba(18, 18, 22, 1) 30% ,rgba(229, 22, 109, 1), rgba(18, 18, 22, 1) 73%); */
+
+}
+
+body::before {
+  animation: bubbleOne 15s ease infinite;
+}
+
+body::after {
+  z-index: -10;
+  width: 490px;
+  height: 520px;
+  animation: bubbleTwo 10s ease infinite;
+
+}
+
+@keyframes bubbleTwo {
+  0% { 
+    top: 15%;
+    left: 10%;
+    opacity: 0.11;
+  }
+  30% { 
+    top: 10%;
+    left: 8%;
+    opacity: 0.1;
+  }
+  70% { 
+    top: 17%;
+    left: 11%;
+    opacity: 0.22;
+  }
+  100% { 
+    top: 15%;
+    left: 10%;
+    opacity: 0.11;
+  }
+
+}
+
+@keyframes bubbleOne {
+  0% { 
+    top: 22%;
+    left: 9%;
+    opacity: 0.09;
+  }
+  10% { 
+    top: 10%;
+    left: 8%;
+    opacity: 0.1;
+  }
+  20% { 
+    top: 21%;
+    left: 11%;
+    opacity: 0.22;
+
+  }
+  30% { 
+    top: 22%;
+    left: 9%;
+    opacity: 0.05;
+
+  }
+  40% {
+    top: 21%;
+    left: 11%;
+    opacity: 0.12;
+
+   }
+  50% { 
+    top: 19%;
+    left: 9%;
+    opacity: 0.08;
+
+
+  }
+  60% { 
+    top: 22%;
+    left: 8%;
+    opacity: 0.12;
+
+
+  }
+  70% { 
+    top: 21%;
+    left: 10%;
+    opacity: 0.14;
+
+
+  }
+  80% { 
+    top: 23%;
+    left: 9%;
+    opacity: 0.1;
+
+
+  }
+  90% { 
+    top: 21%;
+    left: 11%;
+    opacity: 0.12;
+
+
+  }
+  100% { 
+    top: 22%;
+    left: 9%;
+    opacity: 0.09;
+
+  }
+}
+
+@keyframes AnimationName {
+  0%{ background-position:0% 50% }
+  40% { background-position:100% 50% }
+  60% { background-position:90% 30% }
+  100% { background-position:0% 50% }
+}
+
+
 
 /* body::after {
   content: '';
@@ -77,4 +231,11 @@ button {
   border: none;
   padding: 0;
   font-weight: inherit;
+}
+
+
+@media only screen and (max-width: 600px) {
+  main.main-body {
+    padding: 0 5%;
+  }
 }

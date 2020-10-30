@@ -45,7 +45,7 @@ class HeroSection extends React.Component {
             <div className="hero">
                 <HeadNavigation></HeadNavigation>
                 <div className="hero-banner">
-                    <h1>Cian O'Ruanidh</h1>
+                    <h1>Cian O' Ruanidh</h1>
                     <span className="phonetic">sounds like<em>'Key-in Oh-Rooney'</em></span>
                     <div className="h2-holder">
                         <h2 className={!!(this.state.count % 3) ? 'toggle-true' : 'toggle-false' }>{this.state.subheadings[(this.state.count % 9)]}</h2>
