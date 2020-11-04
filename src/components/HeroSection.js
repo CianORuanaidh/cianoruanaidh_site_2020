@@ -5,15 +5,15 @@ import HeadNavigation from './HeadNavigation';
 import '../styles/HeroSection.css';
 
 const subheadings = [
-    'Web developer',
-    'Web developer',
-    'creative thinker',
-    'creative thinker',
-    'creative thinker',
-    "Problem solver",
-    'Problem solver',
-    "Problem solver",
-    'Web developer',
+    { text: 'Web developer', class: 'alt-color-one'},
+    { text: 'Web developer', class: 'alt-color-one'},
+    { text: 'creative thinker', class: 'alt-color-two'},
+    { text: 'creative thinker', class: 'alt-color-two'},
+    { text: 'creative thinker', class: 'alt-color-two'},
+    { text: 'Problem solver', class: ''},
+    { text: 'Problem solver', class: ''},
+    { text: 'Problem solver', class: ''},
+    { text: 'Web developer', class: 'alt-color-one'},
 ];
 
 class HeroSection extends React.Component {
@@ -48,7 +48,7 @@ class HeroSection extends React.Component {
                     <h1>Cian O' Ruanidh</h1>
                     <span className="phonetic">sounds like<em>'Key-in Oh-Rooney'</em></span>
                     <div className="h2-holder">
-                        <h2 className={!!(this.state.count % 3) ? 'toggle-true' : 'toggle-false' }>{this.state.subheadings[(this.state.count % 9)]}</h2>
+                        <h2 className={!!(this.state.count % 3) ? 'toggle-true ' + this.state.subheadings[(this.state.count % 9)].class : 'toggle-false ' + this.state.subheadings[(this.state.count % 9)].class }>{this.state.subheadings[(this.state.count % 9)].text}</h2>                        
                     </div>                 
                 </div>
                 <HeroSocialLinks></HeroSocialLinks>
