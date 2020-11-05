@@ -11,8 +11,8 @@ import '../styles/HeroSocialLinks.css';
 const HeroSocialLinks = () => (
     <nav>    
         <ul className="social-links">                
-            <li><a href="githib.com"><FontAwesomeIcon icon={faGithub} /></a></li>
-            <li><a href="githib.com"><FontAwesomeIcon icon={faLinkedinIn} /></a></li>
+            <li><a href="https://github.com/CianORuanaidh" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /></a></li>
+            <li><a href="https://www.linkedin.com/in/cian-o-ruanaidh-151b3455/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedinIn} /></a></li>
             <li><Link to="/misc_fun"><FontAwesomeIcon icon={faHandPeace} /></Link></li>
         </ul>          
     </nav>

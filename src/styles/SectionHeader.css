@@ -1,10 +1,8 @@
 .animated-bar {
   background-color: #e5166D;
   height: 5px;
-
   width: 100px;
   margin: 0 auto;
-
   animation: swing 2s ;
 }
 
@@ -38,20 +36,12 @@
   75% {
     width: 100px;
   }
-  
-  /* 95% {
-    transform: translate(-100px, 0px);
-    width: 20px;
-  }
-  100% {
-    transform: translate(-100px, 0px);
-    width: 20px;
-  } */
-
 }
 
 .section-header {
-  padding-top: 1rem;;
+  /* padding-top: 3rem; */
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .section-header span {
   opacity: 0.75;

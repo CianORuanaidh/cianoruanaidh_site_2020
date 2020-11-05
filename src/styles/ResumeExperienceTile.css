@@ -2,11 +2,8 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.25);
     border-left: 2px solid #e5166D;
     background-color: rgba(225, 225, 225, 0.025);
-    /* padding: 0.5rem 1rem 0.5rem 2rem; */
-    /* opacity: 0.75; */
     padding: 1rem 1rem 1rem 2rem;
     position: relative;
-
     cursor: pointer;
 }
 
@@ -22,9 +19,7 @@
     background-color: #e5166D;
     position: absolute;
     left: 0;
-
     transition: width 0.1s ease-out;
-
 }
 
 .experience-tile .title::after {
@@ -36,9 +31,7 @@
     left: 2px;
     transform: rotate(45deg);
     margin-top: 3px;
-
     transition: left 0.1s ease-out;
-
 }
 
 .experience-tile.show-more .title::before {
@@ -48,9 +41,7 @@
     background-color: #e5166D;
     position: absolute;
     left: 0;
-
     transition: width 0.1s ease-out;
-
 }
 
 .experience-tile.show-more .title::after {
@@ -62,29 +53,29 @@
     left: 14px;
     transform: rotate(45deg);
     margin-top: 3px;
-
     transition: left 0.1s ease-out;
-
 }
 
 .experience-tile.show-more {
  background-color: rgba(225, 225, 225, 0.05);
 }
 
-.experience-tile .description {
+.experience-tile .description,
+.experience-tile .project {
     overflow: hidden;
     max-height: 0;
     transition: max-height 1s ease-out;
     margin: 0;
 }
 
-.experience-tile.show-more .description {
+.experience-tile.show-more .description,
+.experience-tile.show-more .project {
     height: auto;
     max-height: 600px;
     transition: max-height 3s ease-out;
 }
 
-button:focus + p + p.description {
+button:focus + p + .description {
     height: 100px;
     max-height: 600px;
 }
@@ -94,4 +85,37 @@ button:focus + p + p.description {
     font-size: 0.5rem;
     margin-left: 10px;
     vertical-align: middle;
+}
+
+.project h5 {
+    /* border: 1px pink solid; */
+    margin: 0.5rem 0;
+}
+
+.project ul {
+    /* border: 1px pink solid; */
+    display: block;    
+    padding: 0;
+    margin: 0.5rem 0;
+}
+
+.project li {
+    padding-left: 10px;
+    position: relative;
+
+    padding-left: 10px;
+    position: relative;
+    margin-top: 5px;
+    opacity: 0.7;
+}
+.project li::before {
+    content: '';
+    height: 6px;
+    width: 6px;
+    background: white;
+    position: absolute;
+    left: 0;
+    border-radius: 50%;
+    top: 7px;
+    opacity: 1;
 }

@@ -38,7 +38,6 @@
 .back-to-home-link:hover::after,
 .back-to-home-link:focus::before,
 .back-to-home-link:focus::after {
-    /* columns: #4ECDC4; */
     border-bottom: solid 3px #4ECDC4;
     width: 35px;
 } 

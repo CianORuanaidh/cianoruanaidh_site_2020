@@ -1,5 +1,9 @@
-.content {
+/* .content {
     margin-top: 5rem;
+} */
+
+.about-me {
+    padding-bottom: 80px;
 }
 
 .bio {
@@ -16,13 +20,10 @@
     padding: 15px 25px;
     border-radius: 25px;
     text-transform: capitalize;
-
     margin-right: 50%;
     margin-top: 1rem;
-
     text-decoration: none;
     opacity: 9.5;
-
     cursor: pointer;
 
     -webkit-transition: all .4s;
@@ -32,11 +33,8 @@
 
 .download-resume:focus,
 .download-resume:hover {
-    /* padding: 20px 45px; */
-
     padding: 15px 30px;
     opacity: 1;
-
     border-radius: 10px;
     text-decoration: underline;
 

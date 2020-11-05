@@ -1,4 +1,3 @@
-
 ul {
     display: flex;
     list-style: none;
@@ -41,16 +40,13 @@ button.hamburger-link {
     left: 0;
     z-index: 2;
     cursor: pointer;
-    /* width: 30px;
-    height: 30px; */
     width: 100%;
     height: 40px;
     opacity: 0;
-  }
+}
 
 /* Hamburger Line */
 .hamburger {
-    /* width: 30px; */
     width: 100%;
     padding-top: 20px;
 }
@@ -74,7 +70,6 @@ button.hamburger-link {
     position: absolute;
     z-index: 1;
     top: -12px;
-    /* width: 60%; */
     width: 100%;
     height: 2px;
     right: 0;
@@ -85,7 +80,6 @@ button.hamburger-link {
 /* Moves Line Down */
 .hamburger > div::after {
     top: 12px;
-    /* width: 80%; */
     width: 100%;
 }
 
@@ -148,14 +142,10 @@ header a:focus {
         position: absolute;
         top: 25px;
         right: 30px;
-        /* border: 1px solid lightcoral; */
-        z-index: 20;
-        
-        
+        z-index: 20;        
     }
 
     .hide-overlay ul.link-list {
-        /* display: none; */
         position: absolute;
         top: 0;
         bottom: 100%;
@@ -175,10 +165,6 @@ header a:focus {
         left: 0;
         right: 0;
         background-color: #121216;
-        
-        /* background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1) 20%, rgba(0,0,0,1) 99%, rgba(0,0,0,0)); */
-        /* background-image: linear-gradient(#121216, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 99%, rgba(0,0,0,0)); */
-
         z-index: 10;
         display: flex;
         flex-direction: column;
@@ -192,7 +178,6 @@ header a:focus {
     }
 
     ul.link-list .link {
-        /* border: 1px solid lightskyblue; */
         padding: 1rem;
         text-align: center;
         margin: 0;
@@ -205,9 +190,5 @@ header a:focus {
         height: 0;
         width: 0;
         overflow: hidden;
-    }
-    
-    ul.link-list .link {
-        /* border: 1px solid lightcoral; */
     }
 }

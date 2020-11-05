@@ -1,3 +1,7 @@
+.misc-fun {
+    padding-bottom: 80px;
+}
+
 .project-list {
     display: flex;
     flex-wrap: wrap;
@@ -13,17 +17,14 @@ max-width: 800px;
 }
 
 .project-item {
-    /* max-width: 800px;
-    padding: 1rem; */
-
     max-width: 750px;
-    padding: 1rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
-.project-item  ul {
+.project-item ul {
     padding: 0;
 }
-
 
 iframe {
     max-width: 100%;

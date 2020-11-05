@@ -1,5 +1,5 @@
 .my-resume {
-    /* padding: 0.5px 50px; */
+    padding-bottom: 80px;
 }
 
 .my-resume h3 {
@@ -29,10 +29,6 @@
     margin-right: -1rem;
 }
 .skill-icon {
-    /* padding: 1rem;
-    color: #e5166D; */
-
-
     height: 5rem;
     color: #e5166D;
     background-color: #222;
@@ -47,7 +43,6 @@
 .skill-list .skill-icon:nth-of-type(2n) {
     color: #4ECDC4;
 }
-
 
 .icon-label {
     visibility: hidden;

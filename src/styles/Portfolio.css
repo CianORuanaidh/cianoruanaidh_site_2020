@@ -1,3 +1,7 @@
+.portfolio {
+    padding-bottom: 80px;
+}
+
 h3.portfilio-sub-head {
     text-align: center;
     opacity: 0.75;
@@ -11,27 +15,16 @@ h4.portflio-item-title {
     margin: 1rem 0;
 }
 
-.portfilio-list {
-    /* border: 1px tomato solid; */
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; */
-}
-
 .portfilio-list .portflio-item:nth-child(2n) {
     flex-direction: row-reverse;
 }
 
 .portfilio-list .portflio-item .img-holder {
     margin-right: 2rem;
-    /* border: turquoise 1px solid; */
-
 }
 
 .portfilio-list .portflio-item:nth-child(2n) .portflio-item-content {
     margin-right: 2rem;
-    /* border: turquoise 1px solid; */
-
 }
 
 .portfilio-list .portflio-item:nth-child(2n) .img-holder {
@@ -39,19 +32,12 @@ h4.portflio-item-title {
 }
 
 .portflio-item {
-    /* border: 1px dodgerblue solid; */
-    /* max-width: 400px; */
     padding: 1rem 0;
     margin-top: 3rem;
     display: flex;
 }
 
-/* .portflio-item:first-child {
-    border: turquoise 1px solid;
-} */
-
 .portflio-item-content {
-    /* border: 1px turquoise solid; */
     width: 60%;
 }
 
@@ -97,8 +83,6 @@ a.portfolio-git:focus {
 
     .portfilio-list .portflio-item:nth-child(2n),
     .portflio-item {
-        /* border: 1px solid tomato; */
-    
         margin-top: 2rem;
         padding: 0;
         flex-direction: column;
@@ -108,8 +92,6 @@ a.portfolio-git:focus {
 
     .portflio-item .img-holder,
     .portflio-item .portflio-item-content {
-        /* border: 2px solid coral; */
-
         width: 100%;
         margin-right: 0 !important;
     }
@@ -117,6 +99,5 @@ a.portfolio-git:focus {
     .portflio-item .img-holder {
         margin-bottom: 0.5rem;
     }
-
 
 }

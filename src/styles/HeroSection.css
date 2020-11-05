@@ -1,14 +1,8 @@
-.hero > * {
-  /* margin-top: auto; */
-}
-
 .hero-banner {
-    /* border: 1px solid red; */
     color: white;
 }
 
 .hero-banner h1 {
-    /* color: turquoise; */
     font-size: 3rem;
     text-align: center;
     margin-bottom: 0;
@@ -43,11 +37,6 @@
     text-align: center;
 }
 
-.alt-color-two {
-  /* color: #e5166D; */
-  /* opacity: 0.7; */
-}
-
 .alt-color-one::before {
   content: '';
   color: #4ECDC4;
@@ -71,7 +60,6 @@
   opacity: 0.2;
   top: 0px;
   left: 0px;
-
   color: white;
   width: 30px;
   height: 30px;
@@ -114,43 +102,43 @@
 }
 
 @keyframes collapse-expand {
-    0% {
-        max-width: 500px;
-        padding-right: 10px;
-      }
-    10% {
+  0% {
       max-width: 500px;
       padding-right: 10px;
     }
-    40% {
-        padding-right: 10px;
-    }
-    50% {
-        max-width: 0;
-        padding-right: 0;
-      }
-    60% {
-        padding-right: 10px;
-    }
-    90% {
-      max-width: 500px;
-      padding-right: 10px;
-    }
-    100% {
-        max-width: 500px;
-        padding-right: 10px;
-    }
+  10% {
+    max-width: 500px;
+    padding-right: 10px;
   }
+  40% {
+      padding-right: 10px;
+  }
+  50% {
+      max-width: 0;
+      padding-right: 0;
+    }
+  60% {
+      padding-right: 10px;
+  }
+  90% {
+    max-width: 500px;
+    padding-right: 10px;
+  }
+  100% {
+      max-width: 500px;
+      padding-right: 10px;
+  }
+}
 
 
 .hero-banner h2::after {
-    content: '';
-    width: 0;
-    height: 100%;
-    position: absolute;
-    border: 1px solid white;
-    top: 0;
-    right: 0;
+  content: '';
+  width: 0;
+  height: 100%;
+  position: absolute;
+  border: 1px solid white;
+  top: 0;
+  right: 0;
 }
 
 

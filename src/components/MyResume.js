@@ -4,7 +4,7 @@ import ResumeExperienceTile from '../components/_elements/ResumeExperienceTile';
 import ResumeEducationTile from '../components/_elements/ResumeEducationTile';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHtml5, faCss3, faJs, faAngular, faReact, faSass, faWordpress, faShopify, faPython, faGit} from '@fortawesome/free-brands-svg-icons';
+import { faHtml5, faCss3, faJs, faAngular, faReact, faSass, faWordpress, faShopify, faPython, faGit, faNodeJs} from '@fortawesome/free-brands-svg-icons';
 
 import '../styles/MyResume.css';
 
@@ -14,6 +14,7 @@ let skillArray = [
     { label: 'JavaScript', icon: faJs }, 
     { label: 'Angular', icon: faAngular }, 
     { label: 'ReactJS', icon: faReact }, 
+    { label: 'NodeJS', icon: faNodeJs},
     { label: 'Sass', icon: faSass }, 
     { label: 'Wordpress', icon: faWordpress }, 
     { label: 'Shopify', icon: faShopify }, 
@@ -21,14 +22,70 @@ let skillArray = [
     { label: 'Git', icon: faGit }
 ]
 
-let experience = [{
-    position: 'Software Developer',
-    roel: '2019-2020',
-    bullets: [
-        'thing 1',
-        'thing 2'
-    ]
-}]
+let experience = [
+    {
+        title: 'Software Developer',
+        dates: 'June 2019 - Present',
+        company: 'TravelEdge',
+        project: [
+            { 
+                projectName: 'Digital Back Office web application',
+                bullets : [
+                    'Primary Front-End Developer on internal web application used by the TravelEdge finance department',
+                    'Developed fully functional UI components using HTML, CSS, JavaScript, Angular8, .NET CORE and InVision Studio',
+                    'Collaborated with Data Architect to design and implement UI components to complement lower tier functionality',
+                    'Wrote and re-factored existing front-end code to be modular and reusable'
+                ]
+            },
+            { 
+                projectName: 'Agent Digital Experience (ADX) web application',
+                bullets : [
+                    'Contributed to the development of an all-in-one virtual platform for travel agents',
+                    'Developed fully functional UI components using JavaScript,Angular8, BackboneJS, HTML, CSS and InVision Studio',
+                    'Worked in an Agile environment alongside UX team to understand and design for user needs',
+                    'Worked with BE team to optimize new features by implementing API endpoints based on DB architecture'                                    ]
+            }
+        ],
+        keyAchievements: "High Margin feature release; DBO release; Helped get team’s sprint completion rate above target of 85%."
+    },
+    {
+        title: 'Content Lead',
+        dates: 'August 2014 - Nov 2018',
+        company: 'Loblaw Digital',
+        project: [
+            { 
+                projectName: 'Click & Collect (PC Express)',
+                bullets : [
+                    'Drove quality and accuracy for all product content across nine Loblaws Click & Collect websites',
+                    'Established product content model based off of upstream and downstream dependencies',
+                    'Designed and implemented all initial processes for product enrichment as well as best practices and guidelines for product content & photography',
+                    'Developed, published and maintained in-house analytic dashboards and reports for Online Store Catalogue data',
+                    'Partnered with automation and development teams to develop tools to update and QA Click & Collect website automatically'
+                ]
+            }
+        ],
+        keyAchievements: "Part of core team that built Click & Collect business from pre-launch through to status as Canada’s #1 online grocery retailer with over 250 pickup locations nationwide."
+    },
+    {
+        title: 'Mentor',
+        dates: 'June 2019 - Present',
+        company: 'Juno College',
+        project: [
+            { 
+                projectName: 'Bootcamp/CodeConnect student mentor',
+                bullets : [
+                    'Drove quality and accuracy for all product content across nine Loblaws Click & Collect websites',
+                    'Established product content model based off of upstream and downstream dependencies',
+                    // 'Designed and implemented all initial processes for product enrichment as well as best practices and guidelines for product content & photography',
+                    // 'Developed, published and maintained in-house analytic dashboards and reports for Online Store Catalogue data',
+                    // 'Partnered with automation and development teams to develop tools to update and QA Click & Collect website automatically'
+                ]
+            }
+        ],
+        // keyAchievements: "Part of core team that built Click & Collect business from pre-launch through to status as Canada’s #1 online grocery retailer with over 250 pickup locations nationwide."
+    }
+]
+
 
 let education = [
     {
@@ -45,15 +102,12 @@ let education = [
         },
     ]
 
-let arrray = [1,2,3]
-
 class MyResume extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             experience: experience,
             education: education,
-            array: arrray
         };
       }
 
@@ -64,7 +118,7 @@ class MyResume extends React.Component {
                 <SectionHeader text="resume" subext="some text"></SectionHeader>
       
                 <h3>Experience</h3>                
-                {arrray.map((item) => (<ResumeExperienceTile></ResumeExperienceTile>))}
+                {experience.map((item) => (<ResumeExperienceTile item={item}></ResumeExperienceTile>))}
                 <h3>Eduction</h3>
                 {education.map(item => <ResumeEducationTile item={item}></ResumeEducationTile>)}
                 

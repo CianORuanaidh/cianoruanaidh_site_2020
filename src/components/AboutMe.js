@@ -2,6 +2,8 @@ import React from 'react';
 import HeroSocialLinks from './HeroSocialLinks.js';
 import SectionHeader from '../components/_elements/SectionHeader';
 
+import ressuemPfd from '../assets/cian_oruanaidh_resume_2020.pdf';
+
 import '../styles/AboutMe.css';
 
 const AboutMe = () => (
@@ -18,7 +20,7 @@ const AboutMe = () => (
         <div className="about-me-footer">
             <p><strong>email: </strong> <a href="google.com">oruanaidh.cian@gmail.com</a> </p>
             <HeroSocialLinks></HeroSocialLinks>
-        <button className="download-resume">Resume download</button>
+        <a href={ressuemPfd} target="_blank" rel="noopener noreferrer" className="download-resume">Resume download</a>
         </div>
     </section>
 );
