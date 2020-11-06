@@ -19,17 +19,15 @@ const Contact = () => (
             <p>If you like my work, want to share some ideas, or just want to say hi, I'd love to hear from you.</p>
             <ul className="contact-list">
                 <li className="contact-list-element">
-                    <span className="contact-icon"><FontAwesomeIcon icon={faPaperPlane} /></span> 
+                    <span className="contact-icon"><FontAwesomeIcon icon={faPaperPlane} title="email link icon"/></span> 
                     <div className="contact-list-element-content">
-                        <label>email</label>
-                        <p>oruanaidh.cian@gmail.com</p>
+                        <a href="mailto:oruanaidh.cian@gmail.com" target="_blank" rel="noopener noreferrer">oruanaidh.cian@gmail.com</a>
                     </div>
                 </li>
                 <li className="contact-list-element">
-                    <span className="contact-icon"><FontAwesomeIcon icon={faLinkedinIn} /></span>
+                    <span className="contact-icon"><FontAwesomeIcon icon={faLinkedinIn} title="LinkedIn link icon" /></span>
                     <div className="contact-list-element-content">    
-                        <label>linkedIn</label>
-                        <p>https://ca.linkedin.com/in/cian-o-ruanaidh-151b3455</p>
+                        <a href="mailto:oruanaidh.cian@gmail.com" target="_blank" rel="noopener noreferrer">linkedIn</a>
                     </div>
                 </li>
             </ul>

@@ -76,18 +76,22 @@ let experience = [
                 bullets : [
                     'Drove quality and accuracy for all product content across nine Loblaws Click & Collect websites',
                     'Established product content model based off of upstream and downstream dependencies',
-                    // 'Designed and implemented all initial processes for product enrichment as well as best practices and guidelines for product content & photography',
-                    // 'Developed, published and maintained in-house analytic dashboards and reports for Online Store Catalogue data',
-                    // 'Partnered with automation and development teams to develop tools to update and QA Click & Collect website automatically'
                 ]
             }
         ],
-        // keyAchievements: "Part of core team that built Click & Collect business from pre-launch through to status as Canada’s #1 online grocery retailer with over 250 pickup locations nationwide."
     }
 ]
 
 
 let education = [
+    {
+        class: 'Full Stack Master Class',
+        college: 'Juno College of Technology',
+    },
+    {
+        class: 'Custom Theme Development (Wordpress & Shopify)',
+        college: 'Juno College of Technology',
+    },
     {
         class: 'Web Development Immersive Bootcamp',
         college: 'Juno College of Technology',
@@ -118,13 +122,13 @@ class MyResume extends React.Component {
                 <SectionHeader text="resume" subext="some text"></SectionHeader>
       
                 <h3>Experience</h3>                
-                {experience.map((item) => (<ResumeExperienceTile item={item}></ResumeExperienceTile>))}
+                {experience.map((item, i) => (<ResumeExperienceTile item={item} key={`key-experience-${i}`}></ResumeExperienceTile>))}
                 <h3>Eduction</h3>
-                {education.map(item => <ResumeEducationTile item={item}></ResumeEducationTile>)}
+                {education.map((item, i) => <ResumeEducationTile item={item} key={`key-education-${i}`}></ResumeEducationTile>)}
                 
                 <SectionHeader text="stack" subext="some technologies I'm fimilair with"></SectionHeader>
                 <div className="skill-list">
-                    {skillArray.map(icon => <div className="skill-icon"><label className="icon-label" htmlFor={icon.icon}>{icon.label}</label><FontAwesomeIcon id={icon.icon} icon={icon.icon} title={icon.label}/></div>)}
+                    {skillArray.map(icon => <div key={`key-${icon.label}`} className="skill-icon"><label className="icon-label" htmlFor={icon.icon}>{icon.label}</label><FontAwesomeIcon id={icon.icon} icon={icon.icon} title={icon.label}/></div>)}
                 </div>
                 
             </section>

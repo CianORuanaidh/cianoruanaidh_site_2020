@@ -7,6 +7,10 @@
     cursor: pointer;
 }
 
+.experience-tile:hover  {
+    background-color: rgba(225, 225, 225, 0.05);
+}
+
 .experience-tile h4 ,
 .experience-tile p {
     margin: 0.5rem 0;
@@ -107,6 +111,7 @@ button:focus + p + .description {
     position: relative;
     margin-top: 5px;
     opacity: 0.7;
+    text-transform: none;
 }
 .project li::before {
     content: '';
@@ -118,4 +123,38 @@ button:focus + p + .description {
     border-radius: 50%;
     top: 7px;
     opacity: 1;
+}
+
+.experience-tile.education:hover {
+    cursor: auto;
+}
+
+button.title {
+    text-align: left;
+}
+
+
+@media only screen and (max-width: 670px) {
+    .experience-tile.education .title::before {
+        display: none;
+    }
+    
+    .experience-tile.education .title::after {
+        display: none;
+    }    
+}
+
+@media only screen and (max-width: 400px) { 
+    .experience-tile {
+        padding: 1rem 0.5rem;
+    }
+    
+    .experience-tile .title::before {
+        display: none;
+    }
+    
+    .experience-tile .title::after {
+        display: none;
+    }
+    
 }

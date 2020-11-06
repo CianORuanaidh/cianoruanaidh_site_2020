@@ -52,12 +52,12 @@ class ResumeExperienceTile extends React.Component {
                 <h4 className="title"><button className="title">{this.props.item.company} - {this.props.item.title}</button>{ this.state.isToggleOn ? <span className='toggle-on-icon'><FontAwesomeIcon icon={faDotCircle} /></span> : ''}</h4>
                 <p>{this.props.item.dates}</p>
 
-                {this.props.item.project.map(proj => {
+                {this.props.item.project.map((proj, i) => {
                     return (
-                        <div className="project">
+                        <div key={`proj-key-${i}`} className="project">
                             <h5>{proj.projectName}</h5>
                             <ul>
-                                {proj.bullets.map(item => <li>{item}</li>)}
+                                {proj.bullets.map((item, j) => <li key={`bullet-${i}-${j}`}>{item}</li>)}
                             </ul>
                         </div>
                     )

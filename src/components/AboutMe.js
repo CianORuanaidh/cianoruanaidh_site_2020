@@ -18,7 +18,7 @@ const AboutMe = () => (
                 When I'm not coding I love doingthis like this.</p>
         </div>
         <div className="about-me-footer">
-            <p><strong>email: </strong> <a href="google.com">oruanaidh.cian@gmail.com</a> </p>
+            <p><strong>email: </strong> <a href="mailto:oruanaidh.cian@gmail.com">oruanaidh.cian@gmail.com</a></p>
             <HeroSocialLinks></HeroSocialLinks>
         <a href={ressuemPfd} target="_blank" rel="noopener noreferrer" className="download-resume">Resume download</a>
         </div>
