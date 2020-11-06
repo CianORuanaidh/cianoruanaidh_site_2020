@@ -30,7 +30,6 @@ class HeroSection extends React.Component {
     }
     
     componentWillUnmount() {
-        console.log('UNMOUNT HERO')
         clearInterval(this.timerID);
     }
     

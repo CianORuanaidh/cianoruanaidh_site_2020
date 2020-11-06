@@ -193,8 +193,46 @@ button {
   font-weight: inherit;
 }
 
+.foot-nav {
+  display: none;
+}
+
+.foot-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.foot-links .link {
+  margin: 0;
+  flex-grow: 1;
+}
+
+.foot-links .link a {
+  display: block;
+  padding: 1rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) { 
+  .foot-links .link {
+    min-width: 50%;    
+  }
+}
+
+
 @media only screen and (max-width: 600px) {
+  html {
+    font-size: 100%;
+  }
+ 
   main.main-body {
     padding: 0 5%;
+  }
+
+  .foot-nav {
+    display: block;
   }
 }

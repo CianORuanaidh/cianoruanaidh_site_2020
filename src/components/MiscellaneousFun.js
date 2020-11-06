@@ -11,7 +11,7 @@ import '../styles/MiscellaneousFun.css';
 class MiscellaneousFun extends React.Component {
 
     iframeLoaded() {
-        console.log('iframeLoaded')
+
     }
 
     render() {
