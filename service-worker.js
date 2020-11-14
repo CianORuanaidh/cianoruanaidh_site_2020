@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/cianoruanaidh_site_2020/precache-manifest.d06cf9b9ab5b3033996b540b9be8c0bd.js"
+  "/cianoruanaidh_site_2020/precache-manifest.0559ca07e63b2aa456339f0c9f0c13bb.js"
 );
 
 self.addEventListener('message', (event) => {
