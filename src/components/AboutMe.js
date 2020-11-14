@@ -7,7 +7,7 @@ import ressuemPfd from '../assets/cian_oruanaidh_resume_2020.pdf';
 import '../styles/AboutMe.css';
 
 const AboutMe = () => (
-    <section className="about-me">    
+    <section className="about-me" id="about-me">    
         <SectionHeader text="about me" subext="some text"></SectionHeader>
         <div className="content">
             <h3>I'm Cian, a Front-End Developer based in Toronto.</h3>

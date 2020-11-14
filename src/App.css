@@ -31,8 +31,8 @@ body::after {
   left: 10%;
   width: 500px;
   height: 500px;
-  max-width: 95%;
-  max-height: 95%;
+  max-width: 90%;
+  max-height: 80%;
   background-color: rgba(3,3,3,1);
   border-radius: 50%;
   opacity: 0.2;
@@ -48,6 +48,11 @@ body::after {
   height: 520px;
   animation: bubbleTwo 10s ease infinite;
 
+}
+
+section {
+  /* border: 10px solid salmon; */
+  padding: 0 3rem;
 }
 
 @keyframes bubbleTwo {
@@ -141,7 +146,7 @@ body::after {
 }
 
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -183,7 +188,7 @@ main.main-body {
   max-width: 1600px;
   position: relative;
   margin: 0 auto;
-  padding: 0 2rem;
+  /* padding: 0 2rem; */
 }
 
 button {
@@ -216,10 +221,26 @@ button {
   text-align: center;
 }
 
+footer p {
+  text-align: center;
+  margin: 0;
+  padding: 1rem;
+}
+
 @media only screen and (max-width: 600px) { 
   .foot-links .link {
     min-width: 50%;    
+    background-color: #e5166D;
+    opacity: 0.9;
   }
+  .foot-links .link:nth-child(2),
+  .foot-links .link:nth-child(3) {
+    background-color: turquoise;
+  }
+  .foot-links .link:hover {
+    opacity: 1;
+  }
+
 }
 
 
@@ -228,7 +249,8 @@ button {
     font-size: 100%;
   }
  
-  main.main-body {
+  /* main.main-body,  */
+  section {
     padding: 0 5%;
   }
 

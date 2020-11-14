@@ -12,43 +12,61 @@ import MiscellaneousFun from './components/MiscellaneousFun.js';
 import './App.css';
 
 class App extends React.Component {
-  // constructor() {
-  //     super();
-  //     this.state = {};
-  //   }
 
-  // componentDidMount() {
-  //   const height = document.getElementById('main-main').clientHeight;
-  //   this.setState({ height });
-  //   // console.log('history:', history)
-  // }
-    
+  onNavToTop = () => {
+    window.scrollTo(0, 0);
+  }
+
   render() {
       return (
         <div>
           <Router>
             <main id="main-main" className="main-body">
-              <BackToHomeLink></BackToHomeLink>
-              <Route path="/" exact component={HeroSection}></Route>          
-              <Route path="/about" component={AboutMe}></Route>
-              <Route path="/resume" component={MyResume}></Route>
-              <Route path="/contact" component={Contact}></Route>
-              <Route path="/portfolio" component={Portfilio}></Route>
-              <Route path="/misc_fun" component={MiscellaneousFun}></Route>   
+            <HeroSection/>
+            <AboutMe/>
+            <MyResume/>
+            <Portfilio/>
+            <Contact/>
+            <MiscellaneousFun/>
 
+
+
+              {/* <BackToHomeLink></BackToHomeLink>
+              <Route path="/" exact render={() => { 
+                        this.onNavToTop();
+                        return <HeroSection/>;
+                    }} />
+              <Route path="/about" exact render={() => { 
+                        this.onNavToTop();
+                        return <AboutMe/>;
+                    }} />
+              <Route path="/resume" exact render={() => { 
+                        this.onNavToTop();
+                        return <MyResume/>;
+                    }} />
+              <Route path="/contact" exact render={() => { 
+                        this.onNavToTop();
+                        return <Contact/>;
+                    }} />
+              <Route path="/portfolio" exact render={() => { 
+                        this.onNavToTop();
+                        return <Portfilio/>;
+                    }} />
+              <Route path="/misc_fun" exact render={() => { 
+                        this.onNavToTop();
+                        return <MiscellaneousFun/>;
+                    }} /> */}
             </main>
             <footer>
-
               <nav className="foot-nav">
-
                 <ul className="foot-links">
                     <li className="link"><Link to="/about">about</Link></li>
                     <li className="link"><Link to="/resume">resume</Link></li>
                     <li className="link"><Link to="/portfolio">portfolio</Link></li>
                     <li className="link"><Link to="/contact">contact</Link></li>
                 </ul>     
-              
-              </nav>
+              </nav>              
+              <p>&#169; Cian O'Ruanaidh 2020</p>
             </footer>         
           </Router>
         </div>

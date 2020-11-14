@@ -47,7 +47,7 @@ class Portfilio extends React.Component {
       
       render() {
           return (
-            <section className="portfolio">
+            <section id="portfolio" className="portfolio">
                 <SectionHeader text="portfolio" subext="some text"></SectionHeader>
                 <h3 className="portfilio-sub-head">below are some project from my JunoCollege days</h3>
                 <div className="portfilio-list">
@@ -65,8 +65,7 @@ class Portfilio extends React.Component {
                             </div>  
                         )
                     })}
-                </div>
-                      
+                </div>                      
             </section>
           );
       }

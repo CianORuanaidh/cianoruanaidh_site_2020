@@ -25,8 +25,8 @@
     flex-wrap: wrap;
     font-size: 3rem;
     justify-content: center;
-    margin-left: -1rem;
-    margin-right: -1rem;
+    /* margin-left: -1rem;
+    margin-right: -1rem; */
 }
 .skill-icon {
     height: 5rem;

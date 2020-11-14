@@ -12,7 +12,7 @@ import '../styles/Contact.css';
 
 
 const Contact = () => (
-    <section className="contact">    
+    <section id="contact" className="contact">    
         <SectionHeader text="get in touch" subext="Let's collaborate"></SectionHeader>
         <div className="content">
             <h3>Contact</h3>

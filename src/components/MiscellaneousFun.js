@@ -16,7 +16,7 @@ class MiscellaneousFun extends React.Component {
 
     render() {
         return (
-            <section className="misc-fun">
+            <section id="miscellaneous" className="misc-fun">
                 <SectionHeader text="Hi" subext="Check out some stuff I do when I'm not coding"></SectionHeader>
                 
                 <div className="project-list">
@@ -24,7 +24,7 @@ class MiscellaneousFun extends React.Component {
                     <div className="project-item swiims">
                         <h2>SWiiMS</h2>
                         <p>SWiiMS have been around since late 2019. We signed with New Jersey label <strong>Mint400</strong> and released our debut EP <em><a href="https://open.spotify.com/artist/3AWbKI8LpSBCg9SYeFJ7AM" rel="noopener noreferrer" target="_blank">Through Waves</a></em> in August 2020.</p>
-                        
+            
                         <iframe onLoad={this.iframeLoaded()} title="Media player for Swiims Through Waves ep" src="https://open.spotify.com/embed/album/47JEvHPJldsFaw37SqVCFt?si=AgWgxB4wT0Omic7Jwdcy2w" width="300" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                         <p>Below is a video I created video for our song <em><a href="https://www.youtube.com/watch?v=QBJ6PaQX0T8&t=131s" rel="noopener noreferrer" target="_blank">Hand Of Love</a></em> below.</p>
                         <iframe onLoad={this.iframeLoaded()} width="800" height="420" title="Media player for Swiims Hand Of Love video" src="https://www.youtube.com/embed/QBJ6PaQX0T8" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>

@@ -118,7 +118,7 @@ class MyResume extends React.Component {
       
       render() {
           return (
-            <section className="my-resume">
+            <section id="resume" className="my-resume">
                 <SectionHeader text="resume" subext="some text"></SectionHeader>
       
                 <h3>Experience</h3>                

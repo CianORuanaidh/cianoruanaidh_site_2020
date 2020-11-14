@@ -41,7 +41,7 @@ class HeroSection extends React.Component {
     
     render() {
         return (
-            <div className="hero">
+            <section className="hero">
                 <HeadNavigation></HeadNavigation>
                 <div className="hero-banner">
                     <h1>Cian O' Ruanidh</h1>
@@ -51,7 +51,7 @@ class HeroSection extends React.Component {
                     </div>                 
                 </div>
                 <HeroSocialLinks></HeroSocialLinks>
-            </div>
+            </section>
         );
     }
 }

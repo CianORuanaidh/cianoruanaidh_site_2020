@@ -5,19 +5,19 @@
 .project-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
+.project-item {
+    width: 100%;
+}
 .project-item h2 {
     font-size: 1.5rem;
 }
 
 .project-item p {
-max-width: 800px;
 }
 
 .project-item {
-    max-width: 750px;
     padding-bottom: 2rem;
     margin-bottom: 2rem;
 }
@@ -28,6 +28,7 @@ max-width: 800px;
 
 iframe {
     max-width: 100%;
+    margin: 0 auto;
 }
 
 p a {
